@@ -5,9 +5,9 @@
 
 #SYNTAX
 #The parser is quite simple, so take note of case and spaces (including trailing whitespace)
-#There are no quotation marks used (unless you want to send quote an argument being sent to an external app). 
+#There are no quotation marks used (unless you want to send quote an argument being sent to an external app).
 #Comments cannot be appended to a line, the # marker must be the first character.
-#the general format is 
+#the general format is
 #KEY = VALUE1 VALUE2
 #or
 #KEY = VALUE
@@ -24,7 +24,7 @@ color_stack_background = #010001000100
 
 
 #RESERVED SPACE
-#space can be reserved at the top or bottom of the screen, for example to allow dzen to be displayed, 
+#space can be reserved at the top or bottom of the screen, for example to allow dzen to be displayed,
 #this only applies if the view is not in fullscreen mode:
 
 reserved_top = 0
@@ -35,10 +35,10 @@ reserved_right = 0
 #RESIZE INCREMENT
 #the incremental change for each resize keypress (kinda)
 
-resize_increment = 30 
+resize_increment = 30
 
 #MODKEY
-#This is just a number, e.g, mod2 = 2. 
+#This is just a number, e.g, mod2 = 2.
 modkey = 1
 
 #BINDINGS
@@ -46,12 +46,12 @@ modkey = 1
 #values of mod are M or MS (mod or mod + shift)
 #KEY is an X Keyname
 
-#spawn terminal or menu 
+#spawn terminal or menu
 #the second line of each pair is defining the command to send to /bin/sh
 bind_spawn_menu = M Return
 dmenu = dmenu_run
 bind_spawn_term = MS Return
-term = xterm
+term = x-terminal-emulator
 
 #goto view, as in as in, show the windows on it
 bind_goto_next_view = M m
@@ -122,11 +122,9 @@ bind_search = MS slash
 #euclid supports up to ten hotkeys, bound to external commands
 #the format for the binding is: bind_custom_[01-10] = [M | MS] [keyname] (just like normal bindings)
 #the format for the associated commands is: custom_command_[01-10] = [command to pass to shell]
-#e.g., 
+#e.g.,
 #bind_custom_01 = M Print
 #custom_command_01 = scrot -e 'mv $f ~/screenshots/'
 
 #bind_custom_02 = M x
 #custom_command_02 = slock
-
-
